@@ -4,10 +4,9 @@ function bornYear(age) {
 }
 
 function someone(name, age) {
-  let old = bornYear(age);
-  let x = name;
-  x = name.charAt(0).toUpperCase() + name.slice(1);
-  let sentence = "Hi " + x + ", your year of born is: " + bornYear(age);
-
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+  let birthYear = bornYear(age);
+  let sentence = "Hi " + name + ", your year of born is: " + birthYear;
   return sentence;
 }
+console.log(someone("iman", 35));
